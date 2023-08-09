@@ -806,7 +806,6 @@
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
-		padding-left: 1em;
 	}
 
 		ul li {
@@ -1054,6 +1053,9 @@
 		background-color: #ffffff;
 		border-radius: 4px;
 		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 		.item header {
@@ -1118,11 +1120,13 @@
 				-webkit-transition: -webkit-transform 0.2s ease;
 				-ms-transition: -ms-transform 0.2s ease;
 				transition: transform 0.2s ease;
-				background-size: cover;
+				background-size: 70%;
+				background-color: #1f1f1f;
 				background-position: center;
 				background-repeat: no-repeat;
 				position: absolute;
 				top: 0;
+				object-fit:fill;
 				left: 0;
 				width: 100%;
 				height: 100%;
@@ -1303,16 +1307,23 @@
 	padding: 10px 20px 0px 0px;
 
 }
-.menu-content {
+.menu-link {
 	list-style: none;
 	position: static;
 	color: white;
 	padding: 0px;
+
 }
-.menu-content > a {
+.menu-link > a {
 	border: none;
 	margin-right: 20px;
 	margin-left: 3px;
+}
+.menu-content {
+	font-size: 12px;
+	font-family: arial, sans-serif;
+	letter-spacing: 3px;
+	font-weight: 400;
 }
 
 #burger-menu {
@@ -1662,10 +1673,12 @@
 		flex-direction: row;
 		align-items: center;
 		justify-content: center;
+		margin-bottom: 100px;
 	}
 	#competences-title {
 		padding: 4em 4em 2em 4em;
 		text-align: center;
+		margin-bottom: 0px;
 	}
 	#competences-title::after {
 		content: '';
@@ -1686,7 +1699,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin: 5px;
+		margin: 15px;
 		padding: 10px 30px 10px 30px;
 		border-radius: 10px;
 		background-color:#444444;
@@ -1756,7 +1769,9 @@
 	}
 	
 	#footer {
-		text-align: center;
+		text-align: center; 
+		background-color: black;
+		padding: 2rem 0;
 	}
 
 		#footer a {
@@ -1790,3 +1805,14 @@
 				}
 
 		}
+
+.icons {
+	margin: 0;
+}
+span:hover {
+	color: #EF6480 !important;
+}
+.footer-links {
+	border: none;
+}
+
