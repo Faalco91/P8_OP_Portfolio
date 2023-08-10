@@ -26,6 +26,12 @@
 		line-height: 1;
 	}
 
+	h2 {
+		font-family: 'proxima-nova', sans-serif;
+		
+
+	}
+
 	ol, ul {
 		list-style: none;
 	}
@@ -74,9 +80,6 @@
 
 	}
 
-	body {
-		background: #f4f4f4;
-	}
 
 		body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 			-moz-animation: none !important;
@@ -92,8 +95,8 @@
 /* Type */
 
 	body {
-		background-color: #f4f4f4;
-		color: #666666;
+		background-color: #FDF0E7;
+		color: black;
 	}
 
 	body, input, select, textarea {
@@ -278,7 +281,9 @@
 	}
 
 		a:hover {
-			color: #EF6480 !important;
+			/*color: #EF6480 !important;*/
+			/*color: #EF6480  !important;*/
+
 		}
 
 	strong, b {
@@ -356,6 +361,9 @@
 		text-transform: uppercase;
 		letter-spacing: 0.325em;
 		font-size: 0.725em;
+		font-family: arial, sans-serif;
+		letter-spacing: 3px;
+		font-weight: 400;
 	}
 
 		input[type="submit"].icon:before,
@@ -385,6 +393,7 @@
 			padding: 0 2.5em 0 2.875em;
 			height: 3.75em;
 			line-height: 3.75em;
+			border-radius: 0px;
 		}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -423,9 +432,9 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: transparent;
-		box-shadow: inset 0 0 0 2px #666666;
-		color: #444444 !important;
+		background-color: black;
+		color: white !important;
+		border-radius: 0px;
 	}
 
 		input[type="submit"]:hover,
@@ -434,9 +443,8 @@
 		button:hover,
 		.button:hover {
 			color: #EF6480 !important;
-			box-shadow: inset 0 0 0 2px #EF6480;
+			/*color: #EF6480  !important;*/
 		}
-
 		input[type="submit"]:active,
 		input[type="reset"]:active,
 		input[type="button"]:active,
@@ -452,6 +460,31 @@
 		.button.icon:before {
 			color: #999999;
 		}
+	
+		.button > p {
+			font-size: 12px;
+		}
+
+		.button.big > p {
+			font-size: 12px;
+		}
+
+		#add-project-button {
+			font-size: 12px;
+		}
+
+		@media screen and (max-width: 736px) {
+			.button.big > p { 
+				font-size: 10px;
+			}
+			#add-project-button > p {
+				font-size: 10px;
+				width: 30em;
+			}
+			.button > p {
+				font-size: 10px;
+			}
+		}
 
 /* Form */
 
@@ -463,7 +496,7 @@
 		display: block;
 		font-size: 0.9em;
 		font-weight: 400;
-		margin: 0 0 1em 0;
+		margin: 1em 0 0.5em 0;
 	}
 
 	input[type="text"],
@@ -639,8 +672,9 @@
 		input[type="email"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #EF6480;
-			box-shadow: 0 0 0 1px #EF6480;
+			/*border-color: #EF6480;*/
+			border-color: #EF6480 ;
+			box-shadow: 0 0 0 1px #EF6480 ;
 		}
 
 	.select-wrapper:before {
@@ -660,15 +694,15 @@
 
 	input[type="checkbox"]:checked + label:before,
 	input[type="radio"]:checked + label:before {
-		background-color: #EF6480;
-		border-color: #EF6480;
+		background-color: #EF6480 ;
+		border-color: #EF6480 ;
 		color: #ffffff;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #EF6480;
-		box-shadow: 0 0 0 1px #EF6480;
+		border-color: #EF6480 ;
+		box-shadow: 0 0 0 1px #EF6480 ;
 	}
 
 	::-webkit-input-placeholder {
@@ -1050,7 +1084,7 @@
 
 	.item {
 		padding: 3em 3em 1em 3em;
-		background-color: #ffffff;
+		background-color: #e6cdb02e;;
 		border-radius: 4px;
 		text-align: center;
 		display: flex;
@@ -1091,7 +1125,7 @@
 			}
 
 				.item header a:hover {
-					color: #EF6480 !important;
+					color: #EF6480  !important;
 				}
 
 			.item header strong, .item header b {
@@ -1136,7 +1170,6 @@
 				.item header a:before {
 					content: '';
 					display: block;
-					position: absolute;
 					top: 0;
 					left: 0;
 					width: 100%;
@@ -1319,6 +1352,10 @@
 	margin-right: 20px;
 	margin-left: 3px;
 }
+.menu-link > a:hover {
+	color: #EF6480;
+}
+
 .menu-content {
 	font-size: 12px;
 	font-family: arial, sans-serif;
@@ -1466,7 +1503,8 @@
 		}
 
 			#header a:hover {
-				color: #EF6480 !important;
+				/*color: #EF6480 !important;*/
+				color: #EF6480  !important;
 			}
 
 		#header strong, #header b {
@@ -1624,7 +1662,7 @@
 
 	#intro {
 		padding: 4em 4em 2em 4em;
-		background-color: #ffffff;
+		background-color: #e6cdb02e;
 		border-radius: 4px;
 		text-align: center;
 	}
@@ -1702,7 +1740,7 @@
 		margin: 15px;
 		padding: 10px 30px 10px 30px;
 		border-radius: 10px;
-		background-color:#444444;
+		background-color:black;
 	}
 	.icons-container > p {
 		font-size: 12px;
@@ -1809,10 +1847,57 @@
 .icons {
 	margin: 0;
 }
+
 span:hover {
-	color: #EF6480 !important;
+	color: #EF6480  !important;
 }
+
 .footer-links {
 	border: none;
 }
 
+
+/* Admin modal */
+
+/* Ajoutez ce CSS dans votre fichier main.css */
+.modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+	background-color: #fff;
+	margin: 10% auto;
+	padding: 20px;
+	border-radius: 5px;
+	width: 80%;
+	max-width: 600px;
+	position: relative;
+  }
+  
+  .close {
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+  }
+
+.add-project-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+#add-project-button {
+
+	margin: 0px;
+}
